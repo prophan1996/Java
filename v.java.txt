@@ -1,0 +1,51 @@
+﻿/ *
+ * Để thay đổi tiêu đề giấy phép này, chọn Tiêu đề Giấy phép trong Thuộc tính Dự án.
+ * Để thay đổi tệp mẫu này, chọn Công cụ | Mẫu
+ * Và mở các mẫu trong trình soạn thảo.
+ * /
+Gói v;
+Nhập khẩu javax.swing.JFrame;
+Nhập khẩu javax.swing.JPanel;
+Nhập khẩu java.awt.Color;
+Nhập khẩu java.awt.Cursor;
+Nhập khẩu java.awt.GridLayout;
+/ **
+ *
+ * @author vanle_000
+ * /
+Lớp công cộng V {
+    Công cộng JPanel a, b, c, d;
+    Công cộng V (JFrame g) {
+        G.setLayout (new GridLayout (1,4)); // ??
+        
+        A = mới JPanel ();
+        A.setBackground (Color.BLUE);
+        A.setCursor (Con trỏ Mới (Con trỏ.HAND_CURSOR)); // trõ chuột mạ bằng tay
+        G.add (a);
+        
+        B = mới JPanel ();
+        B.setBackground (Color.GREEN);
+        B.setCursor (con trỏ chuột mới (Cursor.TEXT_CURSOR)); // trõ chuột bằng văn bản
+        G.add (b);
+        
+        C = new JPanel ();
+        C.setBackground (Color.RED);
+        C.setCursor (Con trỏ Mới (Cursor.MOVE_CURSOR)); // trõ di chuyển chuột
+        G.add (c);
+        
+        D = new JPanel ();
+        D.setBackground (Color.BLUE);
+        D.setCursor (Con trỏ Mới (Con trỏ.MOVE_CURSOR));
+        G.add (d);
+    }
+    Public static void main (Chuỗi args []) {
+    
+        JFrame g = new JFrame ();
+        G.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE); //?
+        G.setVisible (đúng);
+        G.setSize (500.300);
+        G.setLocation (400.200);
+        G.setTitle ("DHCN1A");
+        V m = mới V (g);
+    }
+}
